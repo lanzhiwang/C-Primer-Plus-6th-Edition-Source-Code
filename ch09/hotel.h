@@ -16,5 +16,3 @@ int getnights(void);
 // calculates price from rate, nights
 // and displays result
 void showprice(double rate, int nights);
-
-

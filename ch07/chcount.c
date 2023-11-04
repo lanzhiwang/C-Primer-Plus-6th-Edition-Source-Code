@@ -3,15 +3,14 @@
 #define PERIOD '.'
 int main(void)
 {
-    int ch;
-    int charcount = 0;
+	int ch;
+	int charcount = 0;
 
-    while ((ch = getchar()) != PERIOD)
-    {
-        if (ch != '"' && ch != '\'')
-            charcount++;
-    }
-    printf("There are %d non-quote characters.\n", charcount);
+	while ((ch = getchar()) != PERIOD) {
+		if (ch != '"' && ch != '\'')
+			charcount++;
+	}
+	printf("There are %d non-quote characters.\n", charcount);
 
-    return 0;
+	return 0;
 }

@@ -7,10 +7,9 @@
 #define SLEN 32
 
 // structure declarations
-struct names_st
-{
-    char first[SLEN];
-    char last[SLEN];
+struct names_st {
+	char first[SLEN];
+	char last[SLEN];
 };
 
 // typedefs

@@ -5,25 +5,22 @@
 #include <stdbool.h>
 
 /* redefine Item as appropriate */
-typedef struct item
-{
-    char petname[20];
-    char petkind[20];
+typedef struct item {
+	char petname[20];
+	char petkind[20];
 } Item;
 
 #define MAXITEMS 10
 
-typedef struct node
-{
-    Item item;
-    struct node * left;    /* pointer to right branch  */
-    struct node * right;   /* pointer to left branch   */
+typedef struct node {
+	Item item;
+	struct node *left;	/* pointer to right branch  */
+	struct node *right;	/* pointer to left branch   */
 } Node;
 
-typedef struct tree
-{
-    Node * root;           /* pointer to root of tree  */
-    int size;              /* number of items in tree  */
+typedef struct tree {
+	Node *root;		/* pointer to root of tree  */
+	int size;		/* number of items in tree  */
 } Tree;
 
 /* function prototypes */
@@ -82,7 +79,7 @@ bool DeleteItem(const Item * pi, Tree * ptree);
 /*                 value                               */
 /* postcondition:  the function pointed to by pfun is  */
 /*                 executed once for each item in tree */
-void Traverse (const Tree * ptree, void (* pfun)(Item item));
+void Traverse(const Tree * ptree, void (*pfun)(Item item));
 
 /* operation:      delete everything from a tree       */
 /* preconditions:  ptree points to an initialized tree */

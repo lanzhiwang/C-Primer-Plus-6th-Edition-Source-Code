@@ -5,6 +5,5 @@ int main(void)
 {
 	printf("%d\n", BUFSIZ);
 
-   
-   return 0;
+	return 0;
 }
