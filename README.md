@@ -103,6 +103,12 @@ root@2a16e8bf7228:/C-Primer-Plus-6th-Edition-Source-Code/ch01# gcc --help -v | g
   -fdump-analyzer-stderr      Dump various analyzer internals to stderr.
   -flto-compression-level=<number>	Use z Use zlib/zstd compression level <number> for IL.
 
+# 生成预处理文件
+gcc -E first.c
+
+
+
+
 ```
 
 
