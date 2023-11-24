@@ -6,6 +6,8 @@ int main(void)
 
 	printf("dec = %d; octal = %o; hex = %x\n", x, x, x);
 	printf("dec = %d; octal = %#o; hex = %#x\n", x, x, x);
+	// dec = 100; octal = 144; hex = 64
+	// dec = 100; octal = 0144; hex = 0x64
 
 	return 0;
 }
