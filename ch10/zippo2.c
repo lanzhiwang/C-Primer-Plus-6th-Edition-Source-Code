@@ -13,7 +13,7 @@ int main(void)
 	printf("  *pz[0] = %d\n", *pz[0]);
 	printf("    **pz = %d\n", **pz);
 	printf("      pz[2][1] = %d\n", pz[2][1]);
-	printf("*(*(pz+2) + 1) = %d\n", *(* (pz + 2) + 1));
+	printf("*(*(pz+2) + 1) = %d\n", *(*(pz + 2) + 1));
 
 	return 0;
 }

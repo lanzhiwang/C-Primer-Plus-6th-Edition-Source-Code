@@ -57,5 +57,25 @@ int main(void)
 	// unsigned long long: 8
 	// unsigned long long int: 8
 
+	printf("float: %ld\n", sizeof(float));
+	printf("double: %ld\n", sizeof(double));
+	printf("long double: %ld\n", sizeof(long double));
+	// float: 4
+	// double: 8
+	// long double: 16
+
+	printf("char: %ld\n", sizeof(char));
+	// char: 1
+
+	printf("_Bool: %ld\n", sizeof(_Bool));
+	printf("_Complex: %ld\n", sizeof(_Complex));
+	// _Bool: 1
+	// _Complex: 16
+
+	// printf("_Imaginary: %ld\n", sizeof(_Imaginary));
+
+	printf("void: %ld\n", sizeof(void));
+	// void: 1
+
 	return 0;
 }

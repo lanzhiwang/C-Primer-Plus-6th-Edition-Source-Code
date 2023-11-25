@@ -103,7 +103,7 @@ bool DeleteItem(const Item * pi, Tree * ptree)
 void Traverse(const Tree * ptree, void (*pfun)(Item item))
 {
 
-	if(ptree != NULL)
+	if (ptree != NULL)
 		InOrder(ptree->root, pfun);
 }
 
@@ -118,7 +118,7 @@ void DeleteAll(Tree * ptree)
 /* local functions */
 static void InOrder(const Node * root, void (*pfun)(Item item))
 {
-	if(root != NULL) {
+	if (root != NULL) {
 		InOrder(root->left, pfun);
 		(*pfun) (root->item);
 		InOrder(root->right, pfun);

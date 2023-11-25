@@ -106,6 +106,6 @@ void Dummy(char *str)
 
 void show(void (*fp)(char *), char *str)
 {
-	(*fp)(str);		// apply chosen function to str
+	 (*fp)(str);		// apply chosen function to str
 	puts(str);		// display result
 }
